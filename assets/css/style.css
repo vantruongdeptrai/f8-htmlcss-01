@@ -35,15 +35,24 @@ a{
 
 /* =========== Header =============== */
 
-
+.fix-header{
+    position: sticky;
+    background-color: #E6F0FF;
+    padding-top: 26px;
+    top: -26px;
+    z-index: 1;
+}
 .header{
     position: relative;
+    display: flex;
+    flex-direction: column;
     background-color: #E6F0FF;
     height: 100vh;
 }
 
 .navbar{
-    padding-top: 38px;
+    padding: 12px 0;
+    /* padding-top: 38px; */
     display: flex;
     align-items: center;
 }
@@ -517,6 +526,9 @@ footer .colume .social .social-link{
     justify-content: center;
     background-color: #F9F9F9;
     border-radius: 3px;
+}
+footer .social-link + .social-link{
+    margin-left: 16px;
 }
 footer .row-bot{
     margin-top: 81px;
